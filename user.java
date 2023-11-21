@@ -1,7 +1,7 @@
 package com.tns.controller;
 /* class created by Meghana Reddy
-	*21-11-23
-	*/
+ * 21-11-23 
+ */
 
 public class User {
 	long id;
@@ -26,7 +26,7 @@ public class User {
 	public String getType() {
 		return type;
 	}
-	public void setType() {
+	public void setType(String type) {
 		this.type = type;
 	}
 	public String getPassword() {
@@ -36,3 +36,4 @@ public class User {
 		this.password = password;
 	}
 }
+
