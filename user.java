@@ -1,14 +1,26 @@
-package com.tns.controller;
+package com.tns.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 /* class created by Meghana Reddy
  * 21-11-23 
  */
 
+@Entity
+@Table(name="user")
 public class User {
+	@Id
 	long id;
 	String name;
 	String type;
 	String password;
-	public User() {
+	public User(long id , String name , String type , String password) {
+		this.id=id;
+		this.name=name;
+		this.type=type;
+		this.password=password;
 		
 	}
 	public long getId() {
@@ -36,4 +48,3 @@ public class User {
 		this.password = password;
 	}
 }
-
